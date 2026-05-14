@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulley System — Teddy + Sid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hud">
+    <div id="title-block">
+      <div id="title-main">Fixed Pulley System</div>
+      <div id="title-sub">Physics Simulation · Teddy &amp; Sid</div>
+    </div>
+    <div id="stats">
+      <div class="stat">
+        <span class="stat-val" id="stat-rope">0.00</span>
+        <span class="stat-label">m rope pulled</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-val" id="stat-height">0.00</span>
+        <span class="stat-label">m weight raised</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-val" id="stat-force">98.1</span>
+        <span class="stat-label">N load</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="viewport"></div>
+
+  <div id="controls">
+    <div id="slider-section">
+      <div id="slider-label">
+        <span class="icon">⟵</span>
+        <span>Pull rope</span>
+        <span class="icon">⟶</span>
+      </div>
+      <div id="slider-track">
+        <div id="slider-fill"></div>
+        <input type="range" id="pull-slider" min="0" max="100" value="0" step="0.5" />
+      </div>
+    </div>
+    <div id="cam-hint">Drag · Scroll to orbit &amp; zoom</div>
+  </div>
+
+  <div id="legend">
+    <div class="leg"><span class="swatch" style="background:#f5a623"></span>Rope</div>
+    <div class="leg"><span class="swatch" style="background:#7b8cde"></span>Pulley</div>
+    <div class="leg"><span class="swatch" style="background:#e05c5c"></span>Weight (10 kg)</div>
+    <div class="leg"><span class="swatch" style="background:#4caf7a"></span>Applied force</div>
+    <div class="leg"><span class="swatch" style="background:#e87040"></span>Gravity</div>
+  </div>
+
+  <!-- Three.js r128 from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="scene.js"></script>
+</body>
+</html>
