@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Pulley System — Teddy + Sid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui">
+    <div id="title-block">
+      <h1>Fixed Pulley System</h1>
+      <p>Physics Project Schematic &nbsp;·&nbsp; Teddy + Sid</p>
+    </div>
+    <div id="controls-hint">
+      <span>🖱 Drag to orbit</span>
+      <span>⚙ Scroll to zoom</span>
+    </div>
+  </div>
+  <canvas id="cv"></canvas>
+  <div id="legend">
+    <div class="leg-row"><span class="dot" style="background:#cc8833"></span>Rope (≤ 10 m)</div>
+    <div class="leg-row"><span class="dot" style="background:#7777ff"></span>Pulley ⌀ 0.25 m</div>
+    <div class="leg-row"><span class="dot" style="background:#3a7755"></span>Handle (pull grip)</div>
+    <div class="leg-row"><span class="dot" style="background:#1D9E75"></span>Applied force F</div>
+    <div class="leg-row"><span class="dot" style="background:#E24B4A"></span>Gravity (mg)</div>
+  </div>
+  <script src="scene.js"></script>
+</body>
+</html>
