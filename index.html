@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Fixed Pulley System — Teddy + Sid</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="hud">
+    <div id="title-block">
+      <div id="t-main">Fixed Pulley System</div>
+      <div id="t-sub">Interactive Physics · Teddy &amp; Sid</div>
+    </div>
+    <div id="stats">
+      <div class="stat"><span class="sv" id="s-phase">Resting</span><span class="sl">phase</span></div>
+      <div class="sd"></div>
+      <div class="stat"><span class="sv" id="s-rise">0.00</span><span class="sl">m raised</span></div>
+      <div class="sd"></div>
+      <div class="stat"><span class="sv">98.1 N</span><span class="sl">effort = load</span></div>
+    </div>
+  </div>
+
+  <div id="vp"></div>
+
+  <div id="ctrl">
+    <button id="play-btn">▶ Play</button>
+    <div id="slider-area">
+      <div id="slabel">
+        <span class="acc">← drag to pull rope</span>
+        <span id="pct">0%</span>
+      </div>
+      <div id="track">
+        <div id="fill"></div>
+        <div id="knob"></div>
+        <input type="range" id="sl" min="0" max="100" value="0" step="0.2"/>
+      </div>
+    </div>
+    <div id="hint">Drag · Scroll to orbit &amp; zoom</div>
+  </div>
+
+  <div id="legend">
+    <div class="lr"><span class="dot" style="background:#f5a623"></span>Rope</div>
+    <div class="lr"><span class="dot" style="background:#7b8cde"></span>Pulley</div>
+    <div class="lr"><span class="dot" style="background:#cc2222"></span>Weight 10 kg</div>
+    <div class="lr"><span class="dot" style="background:#4caf7a"></span>Applied force →</div>
+    <div class="lr"><span class="dot" style="background:#e87040"></span>Gravity ↓</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="scene.js"></script>
+</body>
+</html>
